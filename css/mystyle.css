@@ -1,0 +1,66 @@
+body{
+    background-color:tan;
+    margin: 0;
+}
+header{
+    background-color: white;
+}
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.container{
+    margin: auto;
+    float: left;
+}
+.bhlogo{
+    float: left;
+    width: 100px;
+    padding: 10px 0;
+}
+nav{
+    float: left;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    margin-right: 10px;
+    
+
+    position: relative;
+}
+nav a{
+    display: inline-block;
+    padding: 20px;
+    color: brown;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+nav a:hover{
+    color:black;
+}
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color:burlywood;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+nav a:hover::before{
+    width: 55%;
+}
+
+
+
