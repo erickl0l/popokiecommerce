@@ -1,0 +1,9 @@
+
+body {
+  height: 100%;
+}
+
+.form-signin {
+  max-width: 700px;
+  padding: 1rem;
+}
